@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI304", "DemoAPI304\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAPIWF", "TestAPIWF\TestAPIWF.csproj", "{D5A60A66-243A-41E1-AA43-930C32A83339}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAPICS", "TestAPICS\TestAPICS.csproj", "{85C21966-1C0A-4EEE-921A-DA569C7F103B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D5A60A66-243A-41E1-AA43-930C32A83339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5A60A66-243A-41E1-AA43-930C32A83339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5A60A66-243A-41E1-AA43-930C32A83339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C21966-1C0A-4EEE-921A-DA569C7F103B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C21966-1C0A-4EEE-921A-DA569C7F103B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C21966-1C0A-4EEE-921A-DA569C7F103B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C21966-1C0A-4EEE-921A-DA569C7F103B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
