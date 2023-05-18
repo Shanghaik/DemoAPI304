@@ -1,0 +1,30 @@
+﻿﻿﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    var result = ViewData["result"];
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="Privacy">
+    <input class="form-control" style="width: 350px; " id="exampleFormControlInput1" name="fe"
+           placeholder="Điểm FE" />
+    <br />
+    <input class="form-control" style="width: 350px; " id="exampleFormControlInput1" name="be"
+           placeholder="Điểm BE" />
+    <br />
+    <input class="form-control" style="width: 350px; " id="exampleFormControlInput1" name="alg"
+           placeholder="Điểm Algo" />
+    <br />
+    <button type="submit" style="width: 350px" class="btn btn-dark">
+        tinh
+    </button>
+</form>
+
+@if (result != null)
+{
+    <h3>@result</h3>
+}
+else
+{
+    <h3>Mời nhập thông tin bên trên</h3>
+}
+<br />
+<br />
