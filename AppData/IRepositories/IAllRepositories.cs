@@ -8,9 +8,9 @@ namespace AppData.IRepositories
 {
     public interface IAllRepositories<T>
     {
-        public IEnumerable<T> GetAllItem();
-        public bool CreateItem(T item);
-        public bool DeleteItem(T item);
-        public bool UpdateItem(T item); 
+        IEnumerable<T> GetAllItem();
+        bool CreateItem(T item);
+        bool DeleteItem(T item);
+        bool UpdateItem(T item); 
     }
 }

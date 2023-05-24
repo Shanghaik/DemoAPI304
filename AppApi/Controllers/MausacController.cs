@@ -2,6 +2,7 @@
 using AppData.Models;
 using AppData.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -35,6 +36,24 @@ namespace AppApi.Controllers
             color.Ma = ma; color.Ten = ten; // Lấy data truyền vào
             return irepos.CreateItem(color);
         }
-
+        [HttpGet("get-color-by-name")]
+        public IEnumerable<MauSac> GetColorByName(string name)
+        {
+            return irepos.GetAllItem().Where(p => p.Ten.Contains("name"));
+        }
+        [HttpPut("edit-color")]
+        public bool EditColor(Guid id, string ma, string ten)
+        {
+            MauSac color = irepos.GetAllItem().First(p => p.Id == id);
+            // MauSac color = new MauSac();
+            color.Id = id; color.Ma = ma; color.Ten = ten;
+            return irepos.UpdateItem(color);
+        }
+        [HttpDelete]
+        public bool DeleteColor(Guid id)
+        {
+            MauSac color = irepos.GetAllItem().First(p => p.Id == id);
+            return irepos.DeleteItem(color);    
+        }
     }
 }
